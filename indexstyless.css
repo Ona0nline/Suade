@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "cf1";
+  src: url(Jaoren.ttf) format("truetype");
+  font-family: "cf2";
+  src: url(StampyLight.ttf) format("truetype");
+  font-family: "cf3";
+  src: url(revertro.ttf) format("truetype");
+  font-family:"halovidgame";
+  src: url(HALO____.TTF) format("truetype");
+  font-family:"joystix";
+  src: url(joystix\ monospace.otf) format("opentype");
+  font-family: "home";
+  src: url(Jaoren.ttf) format("truetype");
+
+}
+
+.header{
+  background-color: black;
+  padding:30px 50px 30px 50px;
+  color:aliceblue;
+  text-align: center; 
+}
+
+
+.suade{
+  color:white;
+  font-family:"cf3";
+}
+
+.nav-container {
+  background-color: #333;
+  padding: 10px;
+  position: relative;
+}
+
+.menu{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default, shown in mobile view */
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display inline for larger screens */
+  justify-content: flex-end;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .menu{
+    display: block; /* Show the menu button in mobile view */
+  }
+
+  .nav-menu {
+    display: none; /* Hide the menu by default in mobile view */
+    flex-direction: column;
+    position: absolute;
+    top: 40px; /* Adjust based on your design */
+    right: 10px;
+    background-color: #333;
+    width: 200px;
+  }
+
+  .nav-menu.open {
+    display: flex; /* Show the menu when the "open" class is added */
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexstyless.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <!-- Needs menu thing top right corner, black background -->
+       <!-- Menu toggle will have home and shop location -->
+      <h1 class="suade">Suade</h1>
+
+      <nav class="nav-container">
+        <button class="menu">
+          ---
+          ---
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+
+        
+
+
+      </nav>
+
+  <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            menuToggle.addEventListener('click', function () {
+                navMenu.classList.toggle('open');
+            });
+        });
+        </script>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,131 @@
+body,html{
+  background:url(mscback.png);
+  background-size:1100px 900px;
+  
+}
+
+.mscvid-head{
+  font-size: 110px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color:aliceblue;
+  font-weight: bold;
+}
+
+.mscvid-sub{
+  font-size: 25px;
+  font-family: "home";
+  text-align: center;
+  color:aliceblue;
+  background-color: #14bff8;
+  opacity:80%;
+  padding:40px 30px 40px 30px;
+  border-radius: 4px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+@font-face {
+  font-family: "cf1";
+  src: url(Jaoren.ttf) format("truetype");
+  font-family: "cf2";
+  src: url(StampyLight.ttf) format("truetype");
+  font-family: "cf3";
+  src: url(revertro.ttf) format("truetype");
+  font-family:"halovidgame";
+  src: url(HALO____.TTF) format("truetype");
+  font-family:"joystix";
+  src: url(joystix\ monospace.otf) format("opentype");
+  font-family: "home";
+  src: url(Jaoren.ttf) format("truetype");
+
+}
+
+.container{
+  width:40rem;
+  height:40rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+
+.yanc,.garage_roof,.imyourman{
+  /* gatop,right,bottom,left */
+  padding:30px 40px 30px 40px;
+  /* text-align: center; */
+  font-size: 24px;
+  background-color: #0909f5;
+  font-family: "home";
+  border-radius: 8px;
+  color:aliceblue;
+  opacity:80%;
+  justify-self: left;
+  border-color: azure;
+
+}
+
+.container-yanc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:2px solid white;
+}
+
+.container-grg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:2px solid white
+}
+
+.container-iym{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  border:2px solid white;
+}
+
+
+/* .button_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+}
+
+.garage{
+  margin-left:30px;
+}
+
+.imym{
+  margin-left: 30px;
+}
+
+/* .garage_roof{ */
+  /* display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  height:100%;
+} */
+
+/* .yanc_video{
+  margin-left: 30px; */
+  /* display: flex;
+  justify-content: left;
+  align-items: left; */
+  /* width: 100%;
+  height:100%;
+} }*/
+
+
+
+
