@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "cf1";
+  src: url(Jaoren.ttf) format("truetype");
+  font-family: "cf2";
+  src: url(StampyLight.ttf) format("truetype");
+  font-family: "cf3";
+  src: url(revertro.ttf) format("truetype");
+  font-family:"halovidgame";
+  src: url(HALO____.TTF) format("truetype");
+
+  font-family:"joystix";
+  src: url(joystix\ monospace.otf) format("opentype");
+
+  font-family: "home";
+  src: url(Jaoren.ttf) format("truetype");
+
+  font-family: "cvogue";
+  src: url(classy-vogue.zip) format("opentype");
+
+  font-family: "vogue";
+  src: url(vogue.zip) format("truetype");
+}
+
+.header{
+  background-color: black;
+  padding:30px 50px 30px 50px;
+  color:aliceblue;
+  text-align: center; 
+}
+
+
+.suade{
+  color:white;
+  font-family:"cf3";
+}
+
+.nav-container {
+  background-color: #333;
+  padding: 10px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width:100%;
+  height:100%;
+}
+
+.menu{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default, shown in mobile view */
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display inline for larger screens */
+  justify-content: flex-end;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile styles */
+@media (max-width: 390px) and (max-height:844px) {
+  .menu{
+    display: block; /* Show the menu button in mobile view */
+    .insta-pic-container {
+         
+  }
+
+  .nav-container{
+    width:100%;
+      height:100%;
+       transform: scale(0.8);
+  }
+}
+
+  .nav-menu {
+    display: none; /* Hide the menu by default in mobile view */
+    flex-direction: column;
+    position: absolute;
+    top: 40px; /* Adjust based on your design */
+    right: 10px;
+    background-color: #333;
+    width: 200px;
+  }
+
+  .nav-menu.open {
+    display: flex; /* Show the menu when the "open" class is added */
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}
+
+.insta-pic-container{
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+  position: relative;
+  width:500px;
+  height:400px;
+}
+
+.insta-pic-container img{
+  width:100%;
+  height:100%;
+}
+
+.text-overlay{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.h2{
+  font-size:44px;
+  text-align: center;
+  color: white;
+  margin-top: 250px;
+  font-family: 'Times New Roman', Times, serife;
+  margin-bottom: 30px;
+  font-family: "vogue";
+
+}
+
+.sub{
+  position: relative;
+  font-size: 28px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  color:white;
+  margin-top: 10px;
+  font-weight: 100;
+ 
+}
+
+.insta-button{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  margin-top: 226px;
+  font-size: 20px;
+  padding:20px 25px 20px 25px;
+  background-color: transparent;
+  color: white;
+  border: solid 1.5px white;
+  font-weight: lighter;
+}

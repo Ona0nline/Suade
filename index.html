@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <script src="index_script.js"></script>
     <link rel="stylesheet" href="indexstyless.css">
   </head>
 
@@ -10,34 +13,58 @@
     <div class="header">
       <!-- Needs menu thing top right corner, black background -->
        <!-- Menu toggle will have home and shop location -->
-      <h1 class="suade">Suade</h1>
+      <h1 class="suade">SUADE</h1>
 
       <nav class="nav-container">
-        <button class="menu">
-          ---
-          ---
-        </button>
-        <ul class="nav-menu">
+
+        <div class="bmenu" onclick="togglemenu()">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="shop.html">Shop</a></li>
+          <li><a href="connect.html">Connect</a></li>
         </ul>
-
-        
-
-
       </nav>
 
-  <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.menu');
-            const navMenu = document.querySelector('.nav-menu');
-
-            menuToggle.addEventListener('click', function () {
-                navMenu.classList.toggle('open');
-            });
-        });
-        </script>
     </div>
+
+    <!-- Remember how to make a grid for future reference -->
+<div class="grid-container">
+
+  <div class="insta-pic-container">
+    
+              <img src="insta_pic.jpg" alt="insta button image">
+              <div class="text-overlay">
+                <h2 class="h2">SUADE</h2>
+              <p class="sub">Suade Clothing</p>
+              <button id="insta-button" class="insta-button" onclick="instalink()">Instagram</button>
+              </div>
+
+            </div>
+
+      <div class="the-beginning-container">
+          <img src="the_beginning.jpg" alt="the beginning matching image" width="400" height="500">
+          <h3>The Beginning</h3>
+          <p>The SS1 shirt symbolizes a start of something big and beautiful. 
+            The spider on the SS1 t-shirt is a reminder to us that everything in life is cyclical
+             and the idea of beginnings and endings can sometimes be blurred. The spider can 
+             represent our own life cycle. Everything connects back to the beginning, and there is
+              no ending—only when the spider decides it is done. Spiders weave a web, [and] just like
+               our lives may symbolize a web, because we are always growing.
+            The spider symbolizes resilience, curiosity, wonder, growth and creativity in the weaving of fate, [and] spider teaches you to maintain balance. It can be between past and future, physical, and spiritual.
+            Last but not least, spiders represent the idea that everything is connected. "Spiders can symbolize all interconnected in something bigger than ourselves, made by their web," adding, "People think of being 'caught in a web,' but I see it as meaning that sometimes we get caught up in feelings and people that do not serve us, which helps us grow."
+          </p>
+      </div>
+
+  </div>
+      
+
   </body>
 
 </html>
