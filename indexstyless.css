@@ -98,6 +98,12 @@ body{
   height:800px;
   overflow-y: scroll;
   text-align: center;
+  line-height: 20px;
+}
+
+.gridContent1 h3,.gridContent2 h2{
+  font-size: 30px;
+
 }
 
 .gridContent1 h3,.gridContent1 p{
@@ -119,6 +125,7 @@ body{
   transform: translateY(235px) scale(2.2);
   max-width: 100%;
   max-height: 100%;
+    box-shadow: 4px 4px 4px #151612;
 }
 
 #emailButton{
