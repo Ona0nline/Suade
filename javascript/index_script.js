@@ -7,6 +7,12 @@ function myFunction() {
   }
 }
 
+function gotocart() {
+  // Open the cart.html page in a new tab or window
+  window.open("cart.html", "_blank");
+}
+
+
 function instaDirect(){
  window.open("https://instagram.com/_.suade/", "_blank");
 }

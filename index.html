@@ -15,21 +15,23 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="index_script.js"></script>
-    <link rel="stylesheet" href="indexstyless.css">
+      <script src="javascript/index_script.js"></script>
+    <link rel="stylesheet" href="css/indexstyless.css">
   </head>
 
   <body>
 
     <div class="navContainer">
-      
-    
     <div class="topnav">
       <h1>Suade</h1>
-
+      <div class="logo-container">
+      <img src="images/logo.jpg" />
+      </div>
        <div id="links">
         <a href="index.html" target="_blank">Home</a>
         <a href="shop.html" target="_blank">Shop</a>
@@ -38,6 +40,7 @@
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
+       <i class='bx bx-shopping-bag' id="cart-icon" onclick="gotocart()"></i>
     </div>
      
     </div>
@@ -50,7 +53,9 @@
           <h3 class="lato-regular">Suade Clothing</h3>
           <button class="instaButton">Instagram</button>
         </div>
+       
       </div>
+        
 
     </div>
 
