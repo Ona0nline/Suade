@@ -139,7 +139,7 @@ h1 {
 /* Cart Overlay */
 .cart-overlay {
   position: absolute;
-  top: 80;
+  top: 50;
   right: 0;
   width: 560px;
   min-height: 100vh;
