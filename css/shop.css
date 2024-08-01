@@ -350,3 +350,64 @@ select{
   font-size:16px;
 }
 
+
+/* >>>> CART PAGE */
+.cart-container{
+
+  display: grid;
+  place-content: center;
+  justify-content: center;
+}
+
+.cart-item{
+
+
+  display: flex;
+  justify-self: center;
+  gap: 1rem;
+}
+
+.cart-item img{
+
+  width: 25%;
+}
+
+.details{
+  padding: 10px;
+  width: 50%;
+}
+
+#name{
+  font-size: 30px;
+}
+#price{
+  font-size: 25px;
+}
+
+.quant{
+  font-size: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons{
+
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons p{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.buttons p:first-child{
+  color: red;
+}
+.buttons p:nth-child(3){
+  color: green;
+}
