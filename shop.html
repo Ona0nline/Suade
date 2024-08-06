@@ -57,10 +57,20 @@
   <!-- Offcanvas for Product Details -->
 
 <div class="offcanvas offcanvas-end" id="offcanvas-right">
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      <button type="button" class="btn btn-dark" data-bs-dismiss="offcanvas"></button>
 
-      View cart logic would be here
-  
+      <div class="offcanvas-body">
+        <div id="update-cart-container" class="cart-container">
+          
+
+      </div>
+      <div class="clear-cart-con">
+        <button type="button" class="btn btn-dark mt-5" id="clear-cart" >Clear Cart</button>
+      </div>
+      
+      </div>
+      
+      
 </div>
 
   <div class="offcanvas offcanvas-start" id="offcanvas-left">
@@ -101,8 +111,8 @@
 
       <form id="cart-form">
         
-        <legend id="size">Size</legend>
-        <select>
+        <legend>Size</legend>
+        <select id="size">
           <option value="">Select a size</option>
           <option value="xs">XS</option>
           <option value="s">S</option>
@@ -112,9 +122,9 @@
         </select><br />
 
         <label for="quantity">Quantity</label><br />
-        <input id="quantity" type="number" placeholder="1" ><br />
+        <input id="quantity" type="number" placeholder="1" min="1" ><br />
         <div class="cart-action">
-          <button type="button">Add to Cart</button><br />
+          <button id="addblack" type="button">Add to Cart</button><br />
           <a data-bs-toggle="offcanvas" href="#offcanvas-right">View Cart</a>
         </div>
       </form>
@@ -162,7 +172,7 @@
   
       <form id="cart-form">
         <legend>Size</legend>
-        <select>
+        <select id="size">
           <option value="">Select a size</option>
           <option value="xs">XS</option>
           <option value="s">S</option>
@@ -172,10 +182,10 @@
         </select><br />
   
         <label for="quantity">Quantity</label><br />
-        <input id="quantity" type="number" placeholder="1"><br />
+        <input id="quantity" type="number" placeholder="1" min="1"><br />
   
         <div class="cart-action">
-          <button type="button">Add to Cart</button><br />
+          <button id="addwhite" type="button" >Add to Cart</button><br />
           <a data-bs-toggle="offcanvas" href="#offcanvas-right">View Cart</a>
         </div>
       </form>

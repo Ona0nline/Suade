@@ -7,6 +7,8 @@ console.log(basket)
 // Generates the cart item
 let generateCartItems = ()=>{
     if(basket.length !== 0){
+        // Map is an array method that creates a new array based off of the manipulation of the array
+        // it's being used on
         return (cartContainer.innerHTML = basket.map((x) =>{
             let {name, price, quantity, img} = x;
             let search = basket.find((y)=>y.name === name) || [];
