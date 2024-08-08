@@ -56,141 +56,129 @@
 
   <!-- Offcanvas for Product Details -->
 
+<!-- Offcanvas for the Cart -->
 <div class="offcanvas offcanvas-end" id="offcanvas-right">
-      <button type="button" class="btn btn-dark" data-bs-dismiss="offcanvas"></button>
-
-      <div class="offcanvas-body">
-        <div id="update-cart-container" class="cart-container">
-          
-
-      </div>
-      <div class="clear-cart-con">
-        <button type="button" class="btn btn-dark mt-5" id="clear-cart" >Clear Cart</button>
-      </div>
-      
-      </div>
-      
-      
+  <button type="button" class="btn btn-dark" data-bs-dismiss="offcanvas"></button>
+  <div class="offcanvas-body">
+    <div id="update-cart-container" class="cart-container"></div>
+    <div class="clear-cart-con">
+      <button type="button" class="btn btn-dark mt-5" id="clear-cart">Clear Cart</button>
+    </div>
+  </div>
 </div>
 
-  <div class="offcanvas offcanvas-start" id="offcanvas-left">
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-    <div class="offcanvas-body">
-      <div id="carousel-black" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-dots">
-          <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="3"></button>
-        </div>
-        <!-- Carousel inner -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/black front.jpg" class="d-block w-100" alt="Black front">
-          </div>
-          <div class="carousel-item">
-            <img src="images/suade black back.jpg" class="d-block w-100" alt="Suade black back">
-          </div>
-          <div class="carousel-item">
-            <img src="images/black together.jpg" class="d-block w-100" alt="Black together">
-          </div>
-          <div class="carousel-item">
-            <img src="images/black pull jpg.jpg" class="d-block w-100" alt="Black pull">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-black" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-black" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+<!-- Offcanvas for Black Shirt -->
+<div class="offcanvas offcanvas-start" id="offcanvas-left">
+  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  <div class="offcanvas-body">
+    <div id="carousel-black" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-dots">
+        <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carousel-black" data-bs-slide-to="3"></button>
       </div>
-      <h2>SS1 BLACK TEE</h2>
-      <h3>R320.00</h3>
-
-      <form id="cart-form">
-        
-        <legend>Size</legend>
-        <select id="size">
-          <option value="">Select a size</option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-        </select><br />
-
-        <label for="quantity">Quantity</label><br />
-        <input id="quantity" type="number" placeholder="1" min="1" ><br />
-        <div class="cart-action">
-          <button id="addblack" type="button">Add to Cart</button><br />
-          <a data-bs-toggle="offcanvas" href="#offcanvas-right">View Cart</a>
+      <!-- Carousel inner -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/black front.jpg" class="d-block w-100" alt="Black front">
         </div>
-      </form>
-    </div>
-  </div>
-
-  <div class="offcanvas offcanvas-start" id="offcanvas-left-white">
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-    <div class="offcanvas-body">
-      <div id="carousel-white" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-dots">
-          <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="3"></button>
-          
+        <div class="carousel-item">
+          <img src="images/suade black back.jpg" class="d-block w-100" alt="Suade black back">
         </div>
-        
-        <!-- Carousel inner -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/white front.jpg" class="d-block w-100" alt="white front">
-          </div>
-          <div class="carousel-item">
-            <img src="images/suade-white.jpg" class="d-block w-100" alt="Suade white back">
-          </div>
-          <div class="carousel-item">
-            <img src="images/white together.jpg" class="d-block w-100" alt="white together">
-          </div>
-          <div class="carousel-item">
-            <img src="white pull.jpg" class="d-block w-100" alt="white pull">
-          </div>
+        <div class="carousel-item">
+          <img src="images/black together.jpg" class="d-block w-100" alt="Black together">
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-white" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-white" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+          <img src="images/black pull jpg.jpg" class="d-block w-100" alt="Black pull">
+        </div>
       </div>
-      <h2>SS1 WHITE TEE</h2>
-      <h3>R320.00</h3>
-  
-      <form id="cart-form">
-        <legend>Size</legend>
-        <select id="size">
-          <option value="">Select a size</option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-        </select><br />
-  
-        <label for="quantity">Quantity</label><br />
-        <input id="quantity" type="number" placeholder="1" min="1"><br />
-  
-        <div class="cart-action">
-          <button id="addwhite" type="button" >Add to Cart</button><br />
-          <a data-bs-toggle="offcanvas" href="#offcanvas-right">View Cart</a>
-        </div>
-      </form>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-black" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-black" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
+    <h2>SS1 BLACK TEE</h2>
+    <h3>R320.00</h3>
+    <form id="cart-form-black">
+      <legend>Size</legend>
+      <select id="size-black">
+        <option value="">Select a size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select><br />
+      <label for="quantity-black">Quantity</label><br />
+      <input id="quantity-black" type="number" placeholder="1" min="1"><br />
+      <div class="cart-action">
+        <button id="addblack" type="button" class="mt-5">Add to Cart</button><br />
+        <a data-bs-toggle="offcanvas" href="#offcanvas-right">View Cart</a>
+      </div>
+    </form>
   </div>
+</div>
+
+<!-- Offcanvas for White Shirt -->
+<div class="offcanvas offcanvas-start" id="offcanvas-left-white">
+  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  <div class="offcanvas-body">
+    <div id="carousel-white" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-dots">
+        <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carousel-white" data-bs-slide-to="3"></button>
+      </div>
+      <!-- Carousel inner -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/white front.jpg" class="d-block w-100" alt="white front">
+        </div>
+        <div class="carousel-item">
+          <img src="images/suade-white.jpg" class="d-block w-100" alt="Suade white back">
+        </div>
+        <div class="carousel-item">
+          <img src="images/white together.jpg" class="d-block w-100" alt="white together">
+        </div>
+        <div class="carousel-item">
+          <img src="white pull.jpg" class="d-block w-100" alt="white pull">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-white" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-white" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <h2>SS1 WHITE TEE</h2>
+    <h3>R320.00</h3>
+    <form id="cart-form-white">
+      <legend>Size</legend>
+      <select id="size-white">
+        <option value="">Select a size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select><br />
+      <label for="quantity-white">Quantity</label><br />
+      <input id="quantity-white" type="number" placeholder="1" min="1"><br />
+      <div class="cart-action">
+        <button id="addwhite" type="button" class="mt-5">Add to Cart</button><br />
+        <a data-bs-toggle="offcanvas" href="#offcanvas-right">View Cart</a>
+      </div>
+    </form>
+  </div>
+</div>
+
 
 
   

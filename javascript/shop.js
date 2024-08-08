@@ -9,10 +9,13 @@ function myFunction() {
 }
 
 // Elements for adding items to the cart
+// Elements for adding items to the cart
 let addBlackItem = document.getElementById('addblack');
 let addWhiteItem = document.getElementById('addwhite');
-let size = document.getElementById('size');
-let quantity = document.getElementById('quantity');
+let sizeBlack = document.getElementById('size-black');
+let quantityBlack = document.getElementById('quantity-black');
+let sizeWhite = document.getElementById('size-white');
+let quantityWhite = document.getElementById('quantity-white');
 
 // Retrieve basket from localStorage or initialize an empty basket
 let basket = JSON.parse(localStorage.getItem('itemData')) || [];
@@ -32,7 +35,7 @@ let storeItemsData = [
 ];
 
 // Function to add items to the cart
-let addItemToCart = (itemName) => {
+let addItemToCart = (itemName, size, quantity) => {
   let selectedSize = size.options[size.selectedIndex].value;
   let numItems = Number(quantity.value);
   let item = storeItemsData.find(item => item.name === itemName);
@@ -46,6 +49,7 @@ let addItemToCart = (itemName) => {
   // Search for the item in the basket
   let search = basket.find(x => x.name === item.name && x.size === selectedSize);
 
+  // If the item isn't in there, add it in otherwise if it is in there, add on to it
   if (search === undefined) {
     basket.push({
       name: item.name,
@@ -66,8 +70,8 @@ let addItemToCart = (itemName) => {
 };
 
 // Event listeners for adding items to the cart
-addBlackItem.onclick = () => addItemToCart('SS1 BLACK TEE');
-addWhiteItem.onclick = () => addItemToCart('SS1 WHITE TEE');
+addBlackItem.onclick = () => addItemToCart('SS1 BLACK TEE', sizeBlack, quantityBlack);
+addWhiteItem.onclick = () => addItemToCart('SS1 WHITE TEE', sizeWhite, quantityWhite);
 
 // Function to update the cart display
 let generateCartItems = () => {
