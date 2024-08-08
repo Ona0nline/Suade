@@ -1,0 +1,187 @@
+body{
+  background-color: black;
+}
+
+p,h3,h2{
+  color:white;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda-sc-bodoni {
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.playfair-display-playfairfont {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: Regular 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "vogue";
+  src: url(fonts/Vogue.ttf) format(truetype);
+}
+
+#navbar{
+  background-color: black;
+
+}
+
+#navbar a{
+  color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-size: 18px;
+    font-family: "lato-light";
+}
+
+#navbar a.icon{
+  color: white;
+    font-size: 30px;
+
+}
+
+#navbar i{
+  color: white;
+    font-size: 30px;
+}
+
+/*  */
+
+.img-container {
+  width: 100%;
+  max-width: 400px;
+ 
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  
+  height: auto;
+ 
+}
+
+.overlayText {
+  text-align: center;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-260px);
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.overlayText h1 {
+  
+  font-size: 55px;
+  font-family: "Bodoni Moda SC", serif;
+  color: azure;
+}
+
+.overlayText h3 {
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  color: azure;
+}
+
+.instabutton {
+  font-size: 14px;
+  transform: translateY(14px);
+  padding: 12px 22px;
+  background-color: transparent;
+  color: white;
+  border: 1.5px solid white;
+  font-family: "lato-regular";
+  font-weight: 100;
+}
+
+#more-icon{
+  font-size: 20px;
+}
+
+
+#more-icon:hover{
+  cursor: pointer;
+}
+
+.formcontainer{
+  display: grid;
+  place-items: center;
+
+}
+
+#submit {
+  background-color: white;
+  color: black;
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+#message {
+  height: 200px;
+  width:500px;
+  background-color: transparent;
+}
+
+input {
+  background-color: transparent;
+  padding: 18px 30px;
+  border: 1px solid white;
+  color: white;
+  width: 500px;
+  margin-bottom: 35px;
+
+}
+
+form {
+  color: aliceblue;
+  margin-bottom: 20px;
+  
+}
+
+label{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover .overlayText {
+  opacity: 1;
+}
+
+#heading{
+  text-align: center;
+    font-size: 78px;
+    font-family: "Bodoni Moda SC", serif;
+    color: #EBEBEA;
+}
+
+span{
+  color:white;
+}
+
+.formCon h2{
+  font-family: "Bodoni Moda SC", serif;
+}
