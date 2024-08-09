@@ -45,6 +45,8 @@ checkDivelem.innerHTML = `
           <input type="hidden" name="item_name" value="${itemNames}">
         
           <!-- Payment Button -->
-          <button type="submit">Pay Now</button>
+           <div class="checkSubmit d-grid place-items-center">
+            <button id="checkSubmit" type="submit" style="border: none;">Pay Now</button>
+           </div>
         </form>
 `

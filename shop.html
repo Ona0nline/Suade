@@ -87,7 +87,10 @@
           <input type="hidden" name="item_name" value="Product Name">
         
           <!-- Payment Button -->
-          <button type="submit">Pay Now</button>
+           <div class="checkSubmit">
+            <button id="checkSubmit" type="submit">Pay Now</button>
+           </div>
+          
         </form>
         </div>
         
@@ -209,18 +212,27 @@
 
   
 
-  <div class="shopCon container-fluid">
-    <div id="blacktee" class="product1Con" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left">
+  <div class="shopCon container-md">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div id="blacktee" class="product1Con" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left">
       <img src="images/black front.jpg" alt="black front" />
       <h2>SS1 - BLACK TEE</h2>
       <p>R320.00</p>
     </div>
-
-    <div id="whitetee" class="product2Con" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left-white">
+      </div>
+      
+      <div class="col-md-4">
+        <div id="whitetee" class="product2Con" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left-white">
       <img src="images/white front.jpg" alt="white front" />
       <h2>SS1 - WHITE TEE</h2>
       <p>R320.00</p>
     </div>
+      </div>
+    
+    </div>
+    
   </div>
 
   <hr />
