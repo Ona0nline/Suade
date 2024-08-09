@@ -115,10 +115,10 @@ h1 {
 }
 
 .shopCon {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  transform: translateY(-60px) translateX(-140px) scale(0.78);
+  gap: 10px; */
+  /* transform: translateY(-60px) translateX(-140px); */
 }
 
 .shopCon img:hover {
@@ -127,8 +127,7 @@ h1 {
   cursor: pointer;
 }
 
-.shopCon:active {
-}
+
 
 .shopCon p {
   font-size: 24px;
@@ -308,4 +307,18 @@ select {
  border:none;
  margin-bottom: 20px;
 
+}
+.image-container {
+  width: 100%;
+  max-width: 100%;
+  /* Ensure it doesn't exceed the parent width */
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove bottom space in case of inline-block elements */
 }
