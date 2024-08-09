@@ -64,7 +64,33 @@
     <div class="clear-cart-con">
       <button type="button" class="btn btn-dark mt-5" id="clear-cart">Clear Cart</button>
     </div>
+    
   </div>
+        <button type="button" class="btn btn-dark mt-5 mb-5" id="checkout" data-bs-toggle="collapse" data-bs-target="#checkForm">Checkout</button>
+        <div id="checkDiv">
+          <form id="checkForm" class="collapse" action="https://www.payfast.co.za/eng/process" method="post">
+          <!-- Merchant details -->
+          <input type="hidden" name="merchant_id" value="23375416">
+          <input type="hidden" name="merchant_key" value="ntaeougdhd12t">
+          <input type="hidden" name="return_url" value="https://your-site.com/return">
+          <input type="hidden" name="cancel_url" value="https://your-site.com/cancel">
+          <input type="hidden" name="notify_url" value="https://your-site.com/notify">
+        
+          <!-- Buyer details -->
+          <input type="hidden" name="name_first" value="First Name">
+          <input type="hidden" name="name_last" value="Last Name">
+          <input type="hidden" name="email_address" value="email@example.com">
+        
+          <!-- Transaction details -->
+          <input type="hidden" name="m_payment_id" value="unique_id">
+          <input type="hidden" name="amount" value="100.00">
+          <input type="hidden" name="item_name" value="Product Name">
+        
+          <!-- Payment Button -->
+          <button type="submit">Pay Now</button>
+        </form>
+        </div>
+        
 </div>
 
 <!-- Offcanvas for Black Shirt -->
@@ -183,7 +209,7 @@
 
   
 
-  <div class="shopCon">
+  <div class="shopCon container-fluid">
     <div id="blacktee" class="product1Con" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left">
       <img src="images/black front.jpg" alt="black front" />
       <h2>SS1 - BLACK TEE</h2>
