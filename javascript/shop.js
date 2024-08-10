@@ -169,16 +169,19 @@ document.getElementById('clear-cart').addEventListener('click', clearCart);
 // Initial call to populate cart if there are items
 generateCartItems();
 
-let totalAmount = 0;
+let totalAmountCheck = 0;
 
 // Calculate the total amount from the basket
 for (let i = 0; i < basket.length; i++) {
   let item = basket[i];
-  totalAmount += item.quantity * item.price;
+  totalAmountCheck += item.quantity * item.price;
 }
 
 // Get the names of all items in the basket
 let itemNames = basket.map(item => item.name).join(', ');
+
+// Log the item names for debugging
+console.log(itemNames);
 
 // Event listener for the form submission
 document.getElementById("guestCheckoutForm").addEventListener("submit", function (e) {
@@ -188,6 +191,12 @@ document.getElementById("guestCheckoutForm").addEventListener("submit", function
     let firstName = document.querySelector('input[name="first_name"]').value;
     let lastName = document.querySelector('input[name="last_name"]').value;
     let email = document.querySelector('input[name="email"]').value;
+    let uniqueId = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;    
+    // Check if itemNames is empty
+    if (!itemNames) {
+        alert("Item names are required.");
+        return; // Stop form submission if item names are not set
+    }
 
     // Generate the payment form with updated details
     let checkFormElem = document.querySelector("#checkDiv");
@@ -206,8 +215,8 @@ document.getElementById("guestCheckoutForm").addEventListener("submit", function
         <input type="hidden" name="email_address" value="${email}">
       
         <!-- Transaction details -->
-        <input type="hidden" name="m_payment_id" value="unique_id">
-        <input type="hidden" name="amount" value="${totalAmount}">
+        <input type="hidden" name="m_payment_id" value="${uniqueId}">
+        <input type="hidden" name="amount" value="${totalAmountCheck}">
         <input type="hidden" name="item_name" value="${itemNames}">
       
         <!-- Payment Button -->
@@ -221,5 +230,9 @@ document.getElementById("guestCheckoutForm").addEventListener("submit", function
     document.getElementById("guestCheckoutForm").submit();
 });
 
-alert("10/08/2024 log: Issue with the Payfast Server therefore unable to process transactions at this stage")
 
+function message(){
+  alert(`10/08/2024 log: Issue with the Payfast Server therefore unable to process transactions at this stage.
+     A new payment gateway will soon be integrated. Please be patient at this time`)
+
+}
