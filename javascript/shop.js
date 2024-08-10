@@ -203,7 +203,7 @@ document.getElementById("guestCheckoutForm").addEventListener("submit", function
         <!-- Buyer details -->
         <input type="hidden" name="name_first" value="${firstName}">
         <input type="hidden" name="name_last" value="${lastName}">
-        <input type="hidden" name="email_address" value="onasihle123@gmail.com">
+        <input type="hidden" name="email_address" value="${email}">
       
         <!-- Transaction details -->
         <input type="hidden" name="m_payment_id" value="unique_id">
@@ -220,4 +220,6 @@ document.getElementById("guestCheckoutForm").addEventListener("submit", function
     // Submit the new form
     document.getElementById("guestCheckoutForm").submit();
 });
+
+alert("10/08/2024 log: Issue with the Payfast Server therefore unable to process transactions at this stage")
 
