@@ -27,6 +27,12 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
   </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -66,32 +72,43 @@
     </div>
     
   </div>
-        <button type="button" class="btn btn-dark mt-5 mb-5" id="checkout" data-bs-toggle="collapse" data-bs-target="#checkForm">Checkout</button>
+        <button type="button" class="btn btn-dark mt-5 mb-5" id="checkout" data-bs-toggle="collapse" data-bs-target="#guestCheckoutForm">Checkout</button>
         <div id="checkDiv">
-          <form id="checkForm" class="collapse" action="https://www.payfast.co.za/eng/process" method="post">
-          <!-- Merchant details -->
-          <input type="hidden" name="merchant_id" value="23375416">
-          <input type="hidden" name="merchant_key" value="ntaeougdhd12t">
-          <input type="hidden" name="return_url" value="https://your-site.com/return">
-          <input type="hidden" name="cancel_url" value="https://your-site.com/cancel">
-          <input type="hidden" name="notify_url" value="https://your-site.com/notify">
-        
-          <!-- Buyer details -->
-          <input type="hidden" name="name_first" value="First Name">
-          <input type="hidden" name="name_last" value="Last Name">
-          <input type="hidden" name="email_address" value="email@example.com">
-        
-          <!-- Transaction details -->
-          <input type="hidden" name="m_payment_id" value="unique_id">
-          <input type="hidden" name="amount" value="100.00">
-          <input type="hidden" name="item_name" value="Product Name">
-        
-          <!-- Payment Button -->
-           <div class="checkSubmit">
-            <button id="checkSubmit" type="submit">Pay Now</button>
-           </div>
+
+          <form autocomplete="on" id="guestCheckoutForm" class="collapse" action="https://www.payfast.co.za/eng/process" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
           
-        </form>
+            <!-- Payment Form with hidden inputs -->
+            <input type="hidden" name="name_first" value="">
+            <input type="hidden" name="name_last" value="">
+            <input type="hidden" name="email_address" value="">
+          
+            <input type="hidden" name="merchant_id" value="23375416">
+            <input type="hidden" name="merchant_key" value="ntaeougdhd12t">
+            <input type="hidden" name="return_url" value="https://your-site.com/return">
+            <input type="hidden" name="cancel_url" value="https://your-site.com/cancel">
+            <input type="hidden" name="notify_url" value="https://your-site.com/notify">
+            
+            <!-- Buyer details -->
+            <input type="hidden" name="name_first" value="First Name">
+            <input type="hidden" name="name_last" value="Last Name">
+            <input type="hidden" name="email_address" value="email@example.com">
+            
+            <!-- Transaction details -->
+            <input type="hidden" name="m_payment_id" value="unique_id">
+            <input type="hidden" name="amount" value="50.00">
+            <input type="hidden" name="item_name" value="Product Name">
+            
+            <!-- Payment Button -->
+            <div class="checkSubmit">
+              <button id="checkSubmit" type="submit">Pay Now</button>
+            </div>
+            
+            </form>
+          
+          
         </div>
         
 </div>
@@ -213,7 +230,7 @@
   
 
   <div class="shopCon container-md">
-    <div class="row">
+    <div class="row d-flex justify-content-center mt-5">
       <!-- Black Tee -->
       <div class="col-6 col-md-4">
         <div id="blacktee" class="product1Con" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left">
@@ -238,18 +255,20 @@
     </div>
   </div>
 
-  <hr />
+ 
 
-  <footer>
+  <footer class="mt-10">
     <p>
-      "More about the product"<br />
-      Maybe something that explains the process/why your products are special<br />
-      Maybe some article links, show us what inspires/ inspired you<br />
-      Phone number &/ address of studio for questions and complaints and stuff<br />
+    <i id="instaIcon" class="bx bxl-instagram-alt" ></i><br/>
+    <i class="bx bx-phone"></i>+27 66 036 6473<br />
+      <i class="bx bx-phone"></i> +27 66 233 9934
+    Menton Road, Auckland Park,Johannesburg<br />Postal Code: 2092<br />
+      
     </p>
   </footer>
 
   <script src="javascript/shop.js"></script>
+  <script src="javascript/check.js"></script>
 
 </body>
 

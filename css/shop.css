@@ -17,6 +17,29 @@
   font-style: normal;
 }
 
+.cardo-regular {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cardo-bold {
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cardo-regular-italic {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "circle";
+  src: url("../fonts/Bright\ Circle.otf") format("opentype");
+}
+
 /* Burger menu stuff */
 
 header {
@@ -118,7 +141,7 @@ h1 {
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px; */
-  /* transform: translateY(-60px) translateX(-140px); */
+  
 }
 
 .shopCon img:hover {
@@ -130,7 +153,7 @@ h1 {
 
 
 .shopCon p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /* QUANTITY SECTION */
@@ -162,12 +185,11 @@ h1 {
 footer {
   background-color: #0b0b09;
   color: #ebebea;
-  padding: 40px 4px;
+  padding: 40px 8px;
+  font-family: "Cardo";
 }
 
-hr {
-  transform: translateY(-180px);
-}
+
 
 .cart-action {
   display: grid;
@@ -308,17 +330,9 @@ select {
  margin-bottom: 20px;
 
 }
-.image-container {
-  width: 100%;
-  max-width: 100%;
-  /* Ensure it doesn't exceed the parent width */
-  margin: auto;
-}
 
-img {
-  width: 100%;
-  height: auto;
-  /* Maintain aspect ratio */
-  display: block;
-  /* Remove bottom space in case of inline-block elements */
+footer p {
+  opacity: 70%;
+  font-size: 16px;
+  font-family: "Cardo";
 }

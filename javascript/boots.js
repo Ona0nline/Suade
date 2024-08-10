@@ -24,3 +24,17 @@ function gotocart(){
 
 let cartIconElement = document.querySelector("#cart-icon")
 cartIconElement.addEventListener("click",gotocart)
+
+function instaDirect2(){
+ window.open("https://instagram.com/_.suade/", "_blank");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    let instaElem = document.querySelector("#instaIcon");
+    if (instaElem) {
+        instaElem.addEventListener("click", instaDirect2);
+    }
+
+    
+});
+
