@@ -79,9 +79,9 @@
         <div id="checkDiv">
 
           <form autocomplete="on" id="guestCheckoutForm" class="collapse" action="https://payments.yoco.com/api/checkouts" method="post">
-            <input class="mt-5" type="text" name="first_name" placeholder="First Name" required>
-            <input class="ml-2" type="text" name="last_name" placeholder="Last Name" required>
-            <input class="ml-2" type="email" name="email" placeholder="Email Address" required>
+            <input id="fname" class="mt-5" type="text" name="first_name" placeholder="First Name" required>
+            <input id="lname" class="ml-2" type="text" name="last_name" placeholder="Last Name" required>
+            <input id="emailIn" class="ml-2" type="email" name="email" placeholder="Email Address" required>
 
             <!-- MD5 signature -->
             <input type="hidden" name="signature" id="signature">
@@ -104,7 +104,7 @@
             
             <!-- Transaction details -->
             <input type="hidden" name="m_payment_id" value="unique_id">
-            <input type="hidden" name="amount" value="50.00">
+            <input id="amount" type="hidden" name="amount" value="100.00">
             <input type="hidden" name="item_name" value="Product Name">
             
             <!-- Payment Button -->

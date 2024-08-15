@@ -173,12 +173,21 @@ generateCartItems();
 document.getElementById("guestCheckoutForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    totalAmountCheck = basket.reduce((total, item) => total + item.price, 0).toFixed(2); // Ensure two decimal places
+    let totalAmount = 0;
+
+// Iterate over each item in the basket
+for (let item of basket) {
+    // Add the price of each item to the total amount
+    totalAmount += item.price;
+}
+
+// Round the total amount to two decimal places
+totalAmountCheck = totalAmount.toFixed(2);// Ensure two decimal places
     itemNames = basket.map(item => item.name).join(', ');
 
-    let firstName = document.querySelector('input[name="first_name"]').value.trim();
-    let lastName = document.querySelector('input[name="last_name"]').value.trim();
-    let email = document.querySelector('input[name="email"]').value.trim();
+    let firstName = document.querySelector('#fname').value.trim();
+    let lastName = document.querySelector('lname').value.trim();
+    let email = document.querySelector('emailIn').value.trim();
     let uniqueId = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 
     if (!itemNames) {
@@ -200,7 +209,7 @@ document.getElementById("guestCheckoutForm").addEventListener("submit", function
         <input type="hidden" name="return_url" value="https://your-site.com/return">
         <input type="hidden" name="cancel_url" value="https://your-site.com/cancel">
         <input type="hidden" name="notify_url" value="https://your-site.com/notify">
-        
+
         <input type="hidden" name="name_first" value="${firstName}">
         <input type="hidden" name="name_last" value="${lastName}">
         <input type="hidden" name="email_address" value="${email}">
